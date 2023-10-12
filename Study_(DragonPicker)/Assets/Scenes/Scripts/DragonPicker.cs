@@ -26,4 +26,13 @@ public class DragonPicker : MonoBehaviour
     {
         
     }
+
+    public void DragonEggDestroyd()
+    {
+        GameObject[] tDragonEggArray = GameObject.FindGameObjectsWithTag("Dragon_Egg");
+        foreach (GameObject tGO in tDragonEggArray)
+        {
+            Destroy(tGO);
+        }
+    }
 }

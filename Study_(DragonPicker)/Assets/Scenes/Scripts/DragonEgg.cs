@@ -28,6 +28,8 @@ public class DragonEgg : MonoBehaviour
         if (transform.position.y < bottomY)
         {
             Destroy(this.gameObject);
+            DragonPicker apScript = Camera.main.GetComponent<DragonPicker>();
+            apScript.DragonEggDestroyd();
         }
     }
 }
